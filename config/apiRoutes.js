@@ -1,4 +1,4 @@
-const ldapURL = "http://localhost:8080"; //To edit
+const ldapURL = "ldap://localhost:389"; //To edit
 
 module.exports = { ldapURL }
 
