@@ -1,7 +1,6 @@
 const express = require("express");
 const app = express();
 var router = require("./routes/router");
-var ntlm = require('express-ntlm');
 
 const cors = require("cors");
 
@@ -9,7 +8,6 @@ require("./routes/index")(app);
 
 app.use(router);
 app.use(cors());
-app.use(ntlm());
 
 app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
