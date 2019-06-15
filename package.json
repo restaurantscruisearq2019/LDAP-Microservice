@@ -19,6 +19,8 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1",
+    "express-cached-ldap": "^2.0.1",
+    "express-ntlm": "^2.4.0",
     "nodemon": "^1.19.1"
   }
 }
