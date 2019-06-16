@@ -45,6 +45,9 @@ passport.deserializeUser(function(user, done) {
 
 app.post("/login", (req, res, next) => {
   passport.authenticate("ldapauth", (err, user, info) => {
+    console.log(err);
+    console.log(user);
+    console.log(info);
     res.send(user);
   })(req, res, next);
 });
